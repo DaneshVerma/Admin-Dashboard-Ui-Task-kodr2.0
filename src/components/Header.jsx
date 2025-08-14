@@ -1,5 +1,5 @@
 import React from "react";
-import { BellIcon } from "@heroicons/react/24/outline";
+import { BellIcon, Bars3Icon,XMarkIcon } from "@heroicons/react/24/outline";
 
 export default function Header({ toggleSidebar, isSidebarOpen }) {
   return (
@@ -8,7 +8,7 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
         onClick={toggleSidebar}
         className="md:hidden p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700"
       >
-        <span className="material-icons">{isSidebarOpen ? "close" : "menu"}</span>
+        <span className="material-icons">{isSidebarOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}</span>
       </button>
       <input
         type="search"
