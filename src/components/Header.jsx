@@ -19,11 +19,13 @@ export default function Header({ toggleSidebar }) {
           <span className='material-icons text-2xl'><BellIcon className="w-6 h-6" /></span>
           <span className='absolute top-0 right-1 block w-3 h-3 bg-red-600 rounded-full animate-pulse'></span>
         </button>
-        <img
-          src='https://i.pravatar.cc/40'
+        <div className="w-10 h-10 rounded-full overflow-hidden">
+          <img
+          src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
           alt='User Avatar'
-          className='w-10 h-10 rounded-full ring-2 ring-green-500'
+          className='ring-2 ring-green-500'
         />
+        </div>
       </div>
     </header>
   );
